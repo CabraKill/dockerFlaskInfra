@@ -1,19 +1,17 @@
-from src.context import app
+from flask.app import Flask
 
 class EndpointController():
-    def __init__(self) -> None:
+    def __init__(self, app: Flask) -> None:
+        self.app = app
         self.setEndpoinst()
 
     def test(self):
         print("test")
-        return "Testing... OK!"
+        return f"Testing... OK!"
 
     # Necessary to intermediate the self
     # when needed
     def setEndpoinst(self):
-        @app.route("/test")
+        @self.app.route("/test")
         def _test():
             return self.test()
-        
-if __name__ == '__main__':
-    print(str(app))
