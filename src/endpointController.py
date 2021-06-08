@@ -1,17 +1,13 @@
-from flask.app import Flask
+from src import app
+
 
 class EndpointController():
-    def __init__(self, app: Flask) -> None:
-        self.app = app
-        self.setEndpoinst()
+    def __init__(self) -> None:
+        self.setEndpoints()
 
     def test(self):
         print("test")
         return f"Testing... OK!"
 
-    # Necessary to intermediate the self
-    # when needed
-    def setEndpoinst(self):
-        @self.app.route("/test")
-        def _test():
-            return self.test()
+    def setEndpoints(self):
+        app.add_url_rule('/test', view_func=self.test, methods=['GET'])

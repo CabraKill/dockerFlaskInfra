@@ -1,12 +1,10 @@
-# save this as app.py
 from src.endpointController import EndpointController
-from src.context import app
+from src import app
 
 
 @app.route("/")
-def hello():
-    print("algo aqui veio")
-    return "Hello!\nFrom python in a container"
+def home():
+    return "Hello, You!"
 
 
-endpointController = EndpointController(app)
+endpointController = EndpointController()
