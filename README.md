@@ -38,4 +38,10 @@ This works for me as a historical backlog and a helping hand for others with the
 
 
 # To do:
-* Implement swagger documentation
+- [x] Endpoint with GET
+- [x] Endpoint with POST
+- [x] Endpoint with arg
+- [x] Endpoint with url variables
+- [x] Create run docker script for windows and linux
+- [x] Create build docker script for windows and linux
+- [ ] Implement swagger documentation
