@@ -1,1 +1,1 @@
-docker build -t dockerFlaskInfra:latest .
+docker build -t dockerflaskinfra:latest .
