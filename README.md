@@ -2,7 +2,7 @@
 A showcase of a docker with flask infrastructure divided between the controllers.
 
 
-![](README/flask_infrastruct.png)
+![](README/flask_infrastruct.jpg)
 
 # How to use it ?
 
