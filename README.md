@@ -2,6 +2,8 @@
 A showcase of a docker with flask infrastructure divided between the controllers.
 
 
+![](README/flask_infrastruct.png)
+
 # How to use it ?
 
 ## From waitress
