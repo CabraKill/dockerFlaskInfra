@@ -13,8 +13,23 @@ waitress-serve --listen=*:8000 app:app
 ```bash
 flask run
 ```
+
+## Docker
+The docker image uses as image base the *python:3.8-slim-buster* with gunicorn execution.
+
+### build
+Run the command bellow or use the *build* script.
+```bash
+docker build -t dockerFlaskInfra:latest .
+```
+
+### run
+Run the command bellow or use the *run* script.
+```bash
+docker run -p :5000 dockerflaskinfra:latest
+```
 # Why?
-Organization of the controllers inside the API
+Organization of the controllers inside the API.
 
 # Origin?
 While I was studying I had difficulty to find ways of dividing the controllers.
