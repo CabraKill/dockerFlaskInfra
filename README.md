@@ -5,7 +5,7 @@ A showcase of a docker with flask infrastructure divided between the controllers
 ![](README/flask_infra.jpg)
 
 # How to use it ?
-
+[Medium Post](https://medium.com/@raph.fusion/arquitetura-de-endpoints-com-flask-483ab729caf7)
 ## From waitress
 ```bash
 waitress-serve --listen=*:8000 app:app
